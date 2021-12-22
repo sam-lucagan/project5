@@ -1,0 +1,309 @@
+/*global setting*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  justify-content: center;
+  
+}
+
+.box span img {
+  padding-top: 20px;
+  padding-bottom: 15px;
+  position: absolute;
+  top: 50;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  object-fit: cover; 
+}
+.box span {
+  position: absolute;
+  top: 500;
+  left: 0;
+  height: 80%;
+  width: 80%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+  -webkit-box-reflect: below 0px
+    linear-gradient(transparent, transparent, #0004);
+}
+
+.box {
+  position: relative;
+  top: 100px;
+  left: 45%;
+  width: 300px;
+  height: 200px;
+  transform-style: preserve-3d;
+  animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: perspective(800px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(800px) rotateY(360deg);
+  }
+}
+
+/*global styling*/
+
+html,
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5em; /*1.5em-2inches*/
+  display: inline-flex;
+  align-items: center;
+  max-height: auto;
+  background-size: cover;
+  background: url("../image/welcome.jpg") no-repeat center center/cover;
+}
+
+
+#container {
+  border: solid gray 1px;
+}
+
+#hero {
+  height: auto;
+  overflow: auto;
+  padding-bottom: 30px;
+}
+
+#hero .hero-background {
+  background-color: #334756;
+  opacity: 0.9;
+  border: 10px solid #fff;
+  width: 1550 px;
+  margin-top: 200px;
+}
+#hero .hero-content {
+  /*padding: 50px;*/
+  margin: 50px;
+  color: #fff;
+  text-align: center;
+  padding-top: 30;
+}
+
+#hero .hero-content h1 {
+  font-size: 60px;
+  line-height: 1.2em;
+}
+
+.primary-text {
+  color: #f0f0cb;
+}
+
+#hero .hero-content p {
+  padding-top: 20px;
+  line-height: 1.7em;
+}
+
+.text-lead {
+  font-size: 20px;
+}
+
+a.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  background: #3f9ee7;
+  padding: 13px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  color: rgb(231, 173, 12);
+  text-decoration: none;
+}
+
+a:hover {
+      color:salmon
+}
+
+.btn:link {
+  color: red;
+}
+
+/* visited link */
+.btn:visited {
+  color: palevioletred;
+}
+
+/* mouse over link */
+.btn:hover {
+  color: #fff;
+}
+
+/* selected link */
+a.btn:active {
+  color: blue;
+}
+
+p.contentguide {
+  font-size: 1.5em;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 3rem;
+  float: center;
+}
+
+h1,
+h2,
+h3 {
+  padding-bottom: 20px;
+}
+
+p {
+  margin: 10px;
+}
+
+/*Navigation*/
+#navbar {
+  background: #082032;
+  overflow: auto;
+  color: #fff;
+}
+#navbar a {
+  color: #fff;
+}
+
+/*removing the bullets in the list */
+
+#navbar ul {
+  list-style: none;
+  float: right;
+}
+
+#navbar ul li {
+  float: left;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+}
+
+#navbar h1 {
+  float: left;
+  padding-top: 20px;
+}
+
+#navbar ul li a:hover {
+  background: #334756;
+  color: #ffefd5;
+}
+
+#navbar ul li a.active {
+  background: rgba(red, green, blue, alpha);
+}
+
+/*Apply some responsive rule*/
+
+.container {
+  margin: auto;
+  max-width: 1500px;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+.icon {
+  float: left;
+}
+
+#about {
+  height: 400px;
+}
+
+#about p {
+  line-height: 2em;
+  font-size: 15px;
+}
+
+#about h2 {
+  color: #ffb740;
+}
+
+#about i {
+  margin-bottom: 10px;
+}
+
+#about .content-1,
+#about .content-2,
+#about .content-3 {
+  float: left;
+  width: 33%;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#about a.c-btn {
+  color: #082031;
+}
+
+#about a.c-btn:hover {
+  color: #ffb740;
+}
+
+/*
+#testimonials {
+  background: url("../image/launion.jpg") no-repeat center center/cover;
+  height: auto;
+  overflow:hidden;
+  opacity: 1;
+}
+
+#testimonials .testimonial img {
+  
+  height: 200px;
+  width: 400px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 20%; */
+}
+
+.row1 {
+  background: rgba(39, 62, 84, 0.4);
+  overflow: hidden;
+  height: auto;
+  z-index: 2;
+}
+
+#testimonials .lead-head {
+  color: #fff;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  font-size: 3em;
+  text-align: center;
+}
+
+#testimonials .here {
+  color: #fff;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+#testimonials .testimonial {
+  padding: 20px;
+  width: 50%;
+  margin-bottom: 40px;
+  border-radius: 1.2em;
+}
+
+.footer {
+  background: #082032;
+  color: #fff;
+  height: 70px;
+  overflow: auto;
+  text-align: center;
+  letter-spacing: 0.5em;
+}
+
+
+ 

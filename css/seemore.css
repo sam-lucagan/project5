@@ -1,0 +1,410 @@
+ /*global setting*/
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    
+  }
+  
+  .box span img {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    position: absolute;
+    top: 50;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    object-fit: cover; 
+  }
+
+  .box span {
+    position: absolute;
+    top: 500;
+    left: 0;
+    height: 80%;
+    width: 80%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+    -webkit-box-reflect: below 0px
+      linear-gradient(transparent, transparent, #0004);
+  }
+  
+  .box {
+    position: relative;
+    top: 100px;
+    left: 35%;
+    width: 300px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: perspective(800px) rotateY(0deg);
+    }
+    100% {
+      transform: perspective(800px) rotateY(360deg);
+    }
+  }
+  
+  /*global styling*/
+  
+  html,
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5em; /*1.5em-2inches*/
+    display: inline-flex;
+    align-items: center;
+    max-height: auto;
+    background-size: cover;
+    background: url("../image/welcome.jpg") no-repeat center center/cover;
+  }
+  
+  #container {
+    border: solid gray 1px;
+    
+  }
+  
+  #hero {
+    height: auto;
+    overflow: auto;
+    padding-bottom: 30px;
+  }
+  
+  
+  #hero .hero-content h1 {
+    font-size: 60px;
+    line-height: 1.2em;
+  }
+  
+  .primary-text {
+    color: #f0f0cb;
+  }
+  
+ 
+  
+  .btn {
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    background: #334756;
+    padding: 13px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn:link {
+    color: red;
+  }
+  
+  /* visited link */
+  .btn:visited {
+    color: palevioletred;
+  }
+  
+  /* mouse over link */
+  .btn:hover {
+    color: #fff;
+  }
+  
+  /* selected link */
+  a.btn:active {
+    color: blue;
+  }
+  
+  a {
+    color: rgb(231, 173, 12);
+    text-decoration: none;
+  }
+
+  a:hover {
+        color:salmon
+  }
+  
+  h1,
+  h2,
+  h3 {
+    padding-bottom: 20px;
+  }
+  
+  p {
+    margin: 10px;
+  }
+  
+  /*Navigation*/
+  #navbar {
+    background: #082032;
+    overflow: auto;
+    color: #fff;
+    margin-top: 1%;
+  }
+  #navbar a {
+    color: #fff;
+  }
+  
+  /*removing the bullets in the list */
+  
+  #navbar ul {
+    list-style: none;
+    float: right;
+  }
+  
+  #navbar ul li {
+    float: left;
+  }
+  
+  #navbar ul li a {
+    display: block;
+    padding: 20px;
+  }
+  
+  #navbar h1 {
+    float: left;
+    padding-top: 20px;
+  }
+  
+  #navbar ul li a:hover {
+    background: #334756;
+    color: #ffefd5;
+  }
+  
+  #navbar ul li a.active {
+    background: rgba(red, green, blue, alpha);
+  }
+  
+  /*Apply some responsive rule*/
+  
+  .container {
+    margin: auto;
+    max-width: 1500px;
+    overflow: auto;
+    padding: 0 20px;
+  }
+  
+ 
+  #about {
+    height: 400px;
+  }
+  
+  #about p {
+    line-height: 2em;
+    font-size: 15px;
+  }
+  
+  #about h2 {
+    color: #ffb740;
+  }
+  
+  #about i {
+    margin-bottom: 10px;
+  }
+  
+  #about .content-1,
+  #about .content-2,
+  #about .content-3 {
+    float: left;
+    width: 33%;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  #about a.c-btn {
+    color: #082031;
+  }
+  
+  #about a.c-btn:hover {
+    color: #ffb740;
+  }
+ 
+ 
+  .footer {
+    background: #082032;
+    color: #fff;
+    height: 70px;
+    overflow: auto;
+    text-align: center;
+    letter-spacing: 0.5em;
+  }
+  
+ 
+ /* Style inputs, select elements and textareas */
+ input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    font-size: 1rem;
+  }
+  
+  /* Style the label to display next to the inputs */
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input [type=date] {
+    background-color: #1b0788;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    bottom: 1px;
+  }
+
+  input#dtour {
+    font-size: 1.2rem;
+    float:left
+
+  }
+
+  ::webkit-calendar-picker-indicator {
+      background-color: #fff;
+      padding: 5px;
+      cursor: pointer;
+      border-radius: 5px;
+  }
+
+
+  
+  
+  /* Style the container */
+  .container1 {
+    border-radius: 5px;
+    background-color: #050505;
+    padding: 20px;
+  
+  }
+  
+  /* Floating column for labels: 25% width */
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: auto) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  
+
+  /*guide*/
+ 
+  /* Clear floats after the columns */
+
+  p.contentguide {
+      font-size: 1.5em;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      line-height: 2rem;
+      float: center;
+  }
+
+div .form-background {
+    
+  /*  width: 1550 px;*/
+  border: 10px solid #fff;
+  margin-top: 200px;
+ 
+  }
+
+
+ div .form-content {
+    /*padding: 50px;*/
+    background-color: #334756;
+    opacity: 0.9;
+    margin: 50px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 30;
+  }
+
+  .column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1500px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  .map-wrapper {
+    max-width: 1500px;
+  
+  }
+  .googlemap {
+    width: 80%;
+    height: 580px;
+  }
+  * {
+    box-sizing: border-box;
+  }
+
+  .column {
+    float: left;
+    padding: 10px;
+    height: auto;
+  }
+
+  /*
+  .left {
+    width:30%;
+    float: right;
+    flex-direction: column;
+  }
+
+  .right {
+    width: 70%;
+    float: right;
+  }*/

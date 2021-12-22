@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/register.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>Registration Form</title>
+    <link rel="shortcut icon" href="./image/log.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <header>
+      <nav id="navbar">
+        <div class="container">
+          <ul>
+            <li>
+              <a class="active" href="index.html"
+                ><i class="fa fa-fw fa-home"></i> Home</a
+              >
+            </li>
+            <li>
+              <a href="about.html"><i class="fas fa-car"></i> Where to go</a>
+            </li>
+            <li>
+              <a href="guide.html"><i class="fas fa-book-reader"></i> Travel Guides</a>
+            </li>
+           <!--<li>
+              <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+            </li>-->
+            <li>
+              <a href="register.html"><i class="fa fa-fw fa-user"></i> Register</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      
+
+      <section id="form">
+        <div class="form-background">
+          <div class="form-content">
+            <div class="phot">
+              <img src="image/tarasaelyu.jpg">
+            </div>
+            <h1>Tara sa  <span class="form1-text">Elyu (La Union) </span> </h1>
+            <div class="container"> 
+               <h2> will help you to go in the places you want to visit and may spend your time together with your family. </h2><br\>
+            <br/>
+         <h3>  <i> Kindly fill up the form for reservation purposes. </i>  </h3>
+
+         
+
+         <div class="container1">
+            <form action="action_page.php">
+              <div class="row">
+                <div class="col-25"> 
+                  <label for="fname"> Full Name </label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Address</Address></label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="lname" name="lastname" placeholder="Your address.">
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Destinations</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="lname" name="lastname" placeholder="Places you want to visit.">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Contact Number</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="lname" name="lastname" placeholder="Your contact number">
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="date">Date of Tour</label>
+                </div>
+                <div class="col-75">
+                  <input type="date" id="dtour" name="dtour" placeholder="Your date of tour">
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="duration">Duration of stay</label>
+                </div>
+                <div class="col-75">
+                  <select id="duration" name="duration">
+                    <option value="one">One day</option>
+                    <option value="onight">Overnight</option>
+                    <option value="two">Two days</option>
+                    <option value="two">3 days and more</option>
+                    <option value="other">Others</option>
+                  </select>
+                </div>
+              </div>
+            
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="subject">Any other concern/s:</label>
+                </div>
+                <div class="col-75">
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                </div>
+              </div>
+
+             <br/>
+
+             <button
+             onclick="myFunction()"
+            id="end"
+           >
+             Submit
+           </button>
+           <script type="text/javascript">
+             function myFunction() {
+               alert("We're sorry we can't Process your reservation!");
+               alert("Website is under maintainace");
+             }
+           </script>
+         
+</form>
+
+
+    
+            </div>
+          </div>
+        </div>
+      </section>
+
+    
+  
+      <!--footer-->
+      <footer>
+        <div class="footer">
+          <p>&copy;Copyright Batch 5_Group3 Creative Web Design 2021</p>
+        </div>
+      </footer>
+    </header>
+  </body>
+</html>
